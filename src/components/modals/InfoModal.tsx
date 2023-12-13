@@ -15,12 +15,21 @@ export const InfoModal = ({ isOpen, handleClose }: Props) => {
         Wordle will provide you with your first clue.
       </p>
       <br />
+
+      <div className="mb-1 mt-4 flex justify-center">
+        <Cell value="I" isCompleted={true} />
+        <Cell value="F" isCompleted={true} />
+        <Cell value="❤️" isCompleted={true} />
+        <Cell value="U" isCompleted={true} />
+        <Cell value="!" isCompleted={true} />
+      </div>
+      {/*
       <p className="text-sm text-gray-500 dark:text-gray-300 text-left">
         You know how to play but in the spirit of diligence...
         Guess the word in 6 tries. After each guess, the color of the tiles will
         change to show how close your guess was to the word.
       </p>
-
+      
       <div className="mb-1 mt-4 flex justify-center">
         <Cell
           isRevealing={true}
@@ -63,7 +72,7 @@ export const InfoModal = ({ isOpen, handleClose }: Props) => {
       <p className="text-sm text-gray-500 dark:text-gray-300">
         The letter U is not in the word in any spot.
       </p>
-
+      */}
       <p className="mt-6 text-sm text-gray-500 dark:text-gray-300 text-left">
         I believe in you, you've got this and I love you more than anything in the world{"😚"}
       </p>
