@@ -1,9 +1,8 @@
 import './App.css'
-
 import { ClockIcon } from '@heroicons/react/outline'
 import { format } from 'date-fns'
 import { default as GraphemeSplitter } from 'grapheme-splitter'
-import { useEffect, useState } from 'react'
+import { useEffect, useLayoutEffect, useState } from 'react'
 import Div100vh from 'react-div-100vh'
 
 import { AlertContainer } from './components/alerts/AlertContainer'
@@ -109,6 +108,11 @@ function App() {
       ? localStorage.getItem('gameMode') === 'hard'
       : false
   )
+
+  useEffect(() => {
+    setIsInfoModalOpen(true)
+  },[])
+
 
   useEffect(() => {
     // if no game state on load,
