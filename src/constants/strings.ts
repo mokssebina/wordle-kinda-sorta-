@@ -10,9 +10,9 @@ export const HARD_MODE_DESCRIPTION =
   'Any revealed hints must be used in subsequent guesses'
 export const HIGH_CONTRAST_MODE_DESCRIPTION = 'For improved color vision'
 export const WINNER_MESSAGE = (solution: string) =>
-  `That's my girl .Your first clue is under the middle cushion of the ${solution}.`
+  `That's my girl .Your lasst clue is under the middle cushion of the ${solution}.`
 export const CORRECT_WORD_MESSAGE = (solution: string) =>
-  `It's OK love beter luck next time. Your first clue is under the middle cushion of the ${solution}.`
+  `It's OK love beter luck next time. Your last clue is under the middle cushion of the ${solution}.`
 export const WRONG_SPOT_MESSAGE = (guess: string, position: number) =>
   `Must use ${guess} in position ${position}`
 export const NOT_CONTAINED_MESSAGE = (letter: string) =>
